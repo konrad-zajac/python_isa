@@ -1,0 +1,48 @@
+# Stwórz fabrykę samochodów (klasę), której będzie można podać liczbę samochodów, markę,
+# pojemność silnika i jego moc. Kolor samochodu ma być dobierany losowo z pośród podanych
+# - czerwony
+# - niebieski
+# - czarny
+# - pomarańczowy
+# Muszę mieć możliwość stworzenia kilku rodzajów samochodów za jednym uruchomieniem fabryki
+# Przykład użcia fabryki:
+#
+# >>> factory = Factory()
+# >>> cars = factory.start_production({count: 12, producer: 'mercedes', 2001.0, 200},
+# >>>                                 {count: 5, producer: 'tata', 1200.5, 80})
+#
+# `start_production` ma zwracać listę list samochodów (dla podanego przykładu lista
+# na pierwszym miescu będzie posiadała listę 12tu samochodów producenta mercedes
+# a na drugim 5 samochodów producenta tata
+import random
+colors = ['red','blue','black','orange']
+
+class Factory:
+  carCount = 0;
+  def __init__(self, car_num:int, car_co:str, eng_vol:int, eng_pow:int):
+    self.car_num=car_num   
+    self.car_co=car_co   
+    self.eng_vol=eng_vol
+    self.eng_pow=eng_pow
+    self.color=colors[random.randint(0, 3)]
+    Factory.carCount +=1
+  def start_production(car_num:int, car_company:str, eng_vol:int, eng_pow:int):
+    cars_group = {'count': car_num,'car_company':car_company,'engine volume': eng_vol,'engine power': eng_pow}
+    return cars_group
+
+c=Factory(12,'mercedes',2001.0,200)
+c2=Factory(5,'tata',1200.5,80)
+#c.myfunc()
+#print('Order #{} is for {} {} cars, with the car_company {}, the capacity of the engine is {}, and the power of the engine is {}'.format(c.carCount,c.car_num, c.color, c.car_co, c.eng_vol, c.eng_pow,))
+#print('Order #{} is for {} {} cars, with the car_company {}, the capacity of the engine is {}, and the power of the engine is {}'.format(c2.carCount,c2.car_num, c2.color, c2.car_co, c2.eng_vol, c2.eng_pow,))
+cars = Factory.start_production( 12,'mercedes', 2001, 200)
+print(cars)
+#
+#
+#   
+#        
+#
+#        def start_production(self):
+#            print('hi')
+#
+#c.start_production()

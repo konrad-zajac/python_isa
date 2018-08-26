@@ -1,0 +1,83 @@
+day1:
+Pobawcie się operacjami na katalogach w terminalu
+
+day2_nazajeciach:
+# 1. jeżeli długość a większa od  10 wypisz 'lubię koty'
+# w przeciwnym wypadku jeżeli b + 12 równa się 134 wypisz 'piję wodę po ogórkach'
+# w przeciwnym wypadku jeżeli c != 'siedem' wypisz 'najlepiej smakują kasztany z placu grunwaldzkiego'
+
+# 2. pobawić się stringami. Zdefiniujcie zmienną o dowolnej nazwie i wartości 'kocham jeść placki kiedy pada na dworze'
+# i sprawdzcie jakie są możliwe metody do wykonania na tym typie (np. zmienna.capitalize()) oraz użyjcie je w kodzie
+# poniżej. PyCharm podpowiada jakie są możliwośći...
+	
+day3_nazajeciach_1:
+# sprawdź czy liczba jest podzielna przez 3 , 5, 7
+# przyjmij dane
+
+day3_nazajeciach_2:
+#  sprawdź czy jest wygrana w kółko i krzyżyk
+#   input: string 9 znaków x, o, n
+#   znaki oznaczają pozycje wierszami od gornego
+# sprawdzamy czy długość inputu = 9
+# wejscie przykladowe: xoxxnooxx
+
+day3_nazajeciach_3:
+# inupt1 - miesiąc
+# input2 - dzien,
+#   okreslic pore roku
+
+day3_domowe:
+# zamiana temperatury
+#     wejscie: "35C" "100F"
+#     wyjście "Temperatura w {typ} to {xxx} stopni"
+#     C = (F - 32) * (5/9)
+#     F = C * (9 / 5) + 32
+
+day4_nazajeciach_1:
+# dopoki haslo nie spelni warunkow
+# haslo musi być co najmniej 6 znaków
+# jeżeli hasło będzie miało mniej niż 4 znaki wypisz "Bardzo słabe hasło"
+# jeżeli hasło będzie miało między 4 a 6 znaków wypisz "słabe hasło"
+
+day4_nazajeciach_2:
+# Narysuj piramidę Mario - jako input - wysokość piramidy
+# np. piramida wysokości 3 ma wyglądać:
+#
+#     #
+#    ###
+#   #####
+#
+# a dla 4
+#      #
+#     ###
+#    #####
+#   #######
+#  #########
+# ###########
+
+day4_nazajeciach_3:
+# dla dowolnie zdefiniowanej zmiennej lista wypisz ją tak,
+# żeby wizualnie tworzyła macierz
+# np.
+#  dla zmiennej `lista = [[x1, x2, x3], [y1, y2, y3], [z1, z2, z3]]`
+# wypisz:
+#  |x1, x2, x3|
+#  |y1, y2, y3|
+#  |z1, z2, z3|
+day4_domowe:
+# wypisac liczby od 1 do 100, ktore naleza do ciagu fibonacciego
+
+day5_nazajeciach_1:
+# skopiuj tresc pliku z day4_domowe.py z Twojego katalogu
+# przepisz ten kod (generowanie ciągu fibo) tak, żeby generowanie ciagu
+# odbylo się w funkcji. Parametrem funkcji ma być gorna granica ciągu
+
+day5_nazajeciach_2:
+# napisz metodę która będzie porównywała 2, a potem 3 zadane jej parametry
+day5_nazajeciach_3:
+# napisz metodę która przemnozy wszystkie elementy zadanej listy i ZWROCI wynik
+day5_domowe:
+# napisz funkcję która zwróci True jeżeli przekazany string jest palindromem
+# i False jeżeli nie jest. Funkcja ta ma być w osobnym pliku palin.py i użyta tutaj.
+# Funkcja ma być dobrze udokumentowana zgodnie ze wszystkimi zasadami docstringa
+# pokazanymi na zajęciach
